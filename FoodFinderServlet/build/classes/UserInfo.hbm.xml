@@ -1,0 +1,24 @@
+<?xml version = "1.0" encoding = "utf-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC 
+"-//Hibernate/Hibernate Mapping DTD//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd"> 
+
+<hibernate-mapping>
+   <class name = "PassData.UserInfo" table = "UserData">
+      
+      <meta attribute = "class-description">
+         This class contains the user detail. 
+      </meta>
+      
+      <id name = "id" type = "int" column = "id">
+         <generator class="native"/>
+      </id>
+      
+      <property name = "firstname" column = "firstname" type = "string"/>
+      <property name = "lastname" column = "lastname" type = "string"/>
+      <property name = "email" column = "email" type = "string"/>
+      <property name = "city" column = "city" type = "string"/>
+      <property name = "date" column = "date_updated" type = "date"/>
+      
+   </class>
+</hibernate-mapping>
